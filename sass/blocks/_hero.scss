@@ -1,0 +1,75 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 153px 0 300px;
+    &::before {
+        position: absolute;
+        width: 870px;
+        height: 835px;
+        background-image: url("../../images/cats.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: -91px;
+        right: calc(50% - -86px);
+        content: "";
+    }
+    &::after {
+        position: absolute;
+        width: 350px;
+        height: 430px;
+        background-image: url("../../images/bird.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        left: calc(50% + 520px);
+        bottom: 0;
+        content: "";
+    }
+}
+
+.hero__inner {
+    width: 608px;
+    margin-left: auto;
+}
+
+.hero__title {
+    margin-bottom: 29px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 91%;
+    color: #333333;
+}
+
+.color {
+    color: #78C0DE;
+}
+
+.hero__text--wrapper {
+    width: 495px;
+}
+
+.hero__text {
+    margin-bottom: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 131%;
+    color: #949494;
+}
+
+.hero__link {
+    display: inline-block;
+    padding: 15px 48px;
+    text-decoration: none;
+    background-color: #333333;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    &:hover {
+        background: #FFBD54;
+        color: #333333;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}

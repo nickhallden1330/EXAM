@@ -1,0 +1,235 @@
+.service {
+    padding: 94px 0 0;
+}
+
+.service__title {
+    margin-bottom: 80px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 112%;
+    color: #333333;
+}
+
+.service__list {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 -6px;
+}
+
+.service__item {
+    position: relative;
+    margin: 0 6px;
+    padding: 129px 32px 28px 32px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    &:nth-child(1) {
+        padding-bottom: 42px;
+        border-radius: 5px 5px 0px 0px;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.service__link {
+    text-decoration: none;
+    display: inline-block;
+    width: 126px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    text-align: center;
+    color: #333333;
+    &::before {
+        position: absolute;
+        background-image: url("../../images/doctorone.png");
+        background-repeat: no-repeat;
+        width: 54px;
+        height: 78px;
+        top: 30px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        content: "";
+    }
+}
+
+.one {
+    &::before {
+        position: absolute;
+        background-image: url("../../images/filled.png");
+        background-repeat: no-repeat;
+        width: 62px;
+        height: 78px;
+        top: 30px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        content: "";
+    }
+}
+
+.two {
+    &::before {
+        position: absolute;
+        background-image: url("../../images/dogg.png");
+        background-repeat: no-repeat;
+        width: 72px;
+        height: 78px;
+        top: 30px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        content: "";
+    }
+}
+
+.three {
+    padding-bottom: 22px;
+    &::before {
+        position: absolute;
+        background-image: url("../../images/ddog.png");
+        background-repeat: no-repeat;
+        width: 76px;
+        height: 76px;
+        top: 30px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        content: "";
+    }
+}
+
+.four {
+    &::before {
+        position: absolute;
+        background-image: url("../../images/veterinary.png");
+        background-repeat: no-repeat;
+        width: 78px;
+        height: 78px;
+        top: 30px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        content: "";
+    }
+}
+
+.five {
+    padding-bottom: 22px;
+    &::before {
+        position: absolute;
+        background-image: url("../../images/dogs.png");
+        background-repeat: no-repeat;
+        width: 76px;
+        height: 76px;
+        top: 30px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        content: "";
+    }
+}
+
+.watch {
+    padding: 41px 0 41px 35px;
+    background: #FFFFFF;
+    border-radius: 0px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.watch__img {
+    border-radius: 5px;
+}
+
+.watch__content {
+    width: 492px;
+    margin-left: 67px;
+}
+
+.watch__title {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 56%;
+    color: #333333;
+}
+
+.watch__text {
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #949494;
+}
+
+.watch__link {
+    display: inline-block;
+    position: relative;
+    margin-right: 21px;
+    padding: 15px 36px 15px 63px;
+    margin-top: 25px;
+    background-color: #FFBD54;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    &::before {
+        position: absolute;
+        width: 22px;
+        height: 21px;
+        background-image: url("../../images/money.svg");
+        background-repeat: no-repeat;
+        top: 14px;
+        left: 35px;
+        content: "";
+    }
+    &:hover {
+        background-color: #333;
+        color: #fff;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.watch__link__inner {
+    display: inline-block;
+    position: relative;
+    padding: 15px 37px 15px 64px;
+    text-decoration: none;
+    background-color: #333333;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    &::before {
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        background-image: url("../../images/document.svg");
+        background-repeat: no-repeat;
+        top: 14px;
+        left: 37px;
+        content: "";
+    }
+    &:hover {
+        background-color: #FFBD54;
+        color: #333333;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
+

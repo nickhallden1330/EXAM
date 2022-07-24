@@ -1,0 +1,80 @@
+.site-header-center {
+    padding: 20px 0;
+    background-color: #FFFFFF;
+    border: 1px solid #F3F3F3;
+}
+
+.site-header-center__inner {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo {
+    text-decoration: none;
+    position: absolute;
+    left: 0;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar__item + .navbar__item {
+    margin-left: 55px;
+}
+
+.navbar__item {
+    position: relative;
+    &:nth-child(1)::before {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-image: url("../../images/fish.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: 0;
+        left: -27px;
+        content: "";
+    }
+    &:nth-child(7) {
+        padding-left: 195px;
+        margin: 0;
+    }
+    &:nth-child(7)::before {
+        position: absolute;
+        width: 24px;
+        height: 21px;
+        background-image: url("../../images/dog.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        right: 121px;
+        top: 0;
+        content: '';
+    }
+}
+
+.navbar__link {
+    display: block;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    &:hover {
+        border-bottom: 4px solid #F4FFAD;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
